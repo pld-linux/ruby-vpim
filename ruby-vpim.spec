@@ -30,9 +30,24 @@ the MIME Content-Type for Directory Information (RFC 2425). The basic
 RFC 2425 format is implemented by Vpim::DirectoryInfo and
 Vpim::DirectoryInfo::Field.
 
+%description -l pl.UTF-8
+vPim to napisana w czystym Rubym biblioteka do dekodowania i kodowania
+danych ("informacji osobistych") w formacie vCard i iCalendar.
+
+vCard (RFC 2426) to format dla informacji osobistych, więcej w
+dokumentacji Vpim::Vcard i Vpim::Maker::Vcard.
+
+iCalendar (RFC 2445) to format do informacji związanych z kalendarzem,
+więcj w dokumentacji do Vpim::Icalendar.
+
+Obsługa formatów vCard i iCalendar jest zbudowana w oparciu o
+implementację MIME Content-Type dla informacji katalogowych (RFC
+2425). Podstawowy format RFC 2425 jest zaimplementowany w
+Vpim::DirectoryInfo i Vpim::DirectoryInfo::Field.
+
 %prep
 %setup -q -c
-tar xf %{SOURCE0} -O data.tar.gz | tar xzv-
+tar xf %{SOURCE0} -O data.tar.gz | tar xz -
 cp %{_datadir}/setup.rb .
 
 %build
