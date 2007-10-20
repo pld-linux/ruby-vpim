@@ -47,7 +47,7 @@ Vpim::DirectoryInfo i Vpim::DirectoryInfo::Field.
 
 %prep
 %setup -q -c
-tar xf %{SOURCE0} -O data.tar.gz | tar xz -
+tar xf %{SOURCE0} -O data.tar.gz | tar xz
 cp %{_datadir}/setup.rb .
 
 %build
