@@ -8,7 +8,6 @@ Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/9497/vpim-0.360.gem
 # Source0-md5:	6c7cfbcc76ac08663e32d29a1e1b62cf
 URL:		http://vpim.rubyforge.org/
-BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	setup.rb >= 3.3.1
 Requires:	ruby-builder
